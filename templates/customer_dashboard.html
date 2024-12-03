@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Customer Dashboard</h1>
+<p>Hello, {{ user.username }}! You are logged in as a Customer.</p>
+
+<section>
+    <h2>Browse Products</h2>
+    <p>Explore fresh products from farmers near you!</p>
+    <!-- You can add a product listing here -->
+</section>
+
+<section>
+    <h2>Your Orders</h2>
+    <p>Here you can view your orders and their statuses.</p>
+    <!-- Display orders or links to order history -->
+</section>
+{% endblock %}

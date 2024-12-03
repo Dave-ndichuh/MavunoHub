@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Admin Dashboard</h1>
+<p>Hello, {{ user.username }}! You are logged in as an Admin.</p>
+
+<section>
+    <h2>User Management</h2>
+    <p>Manage users here. You can view all registered farmers and customers, as well as manage their accounts.</p>
+    <!-- Add links or functionality to manage users -->
+</section>
+
+<section>
+    <h2>System Analytics</h2>
+    <p>View overall system performance and data analytics here.</p>
+    <!-- Add analytics, reports, or any relevant info for admins -->
+</section>
+{% endblock %}

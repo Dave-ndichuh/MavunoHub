@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Farmer Dashboard</h1>
+<p>Hello, {{ user.username }}! You are logged in as a Farmer.</p>
+
+<section>
+    <h2>Your Products</h2>
+    <p>Here, you can manage your products and advertise your fresh produce!</p>
+    <!-- Add features like product listing, adding new products, etc. -->
+</section>
+
+<section>
+    <h2>Orders</h2>
+    <p>View your current and past orders here.</p>
+    <!-- Display order details or links to order management -->
+</section>
+{% endblock %}

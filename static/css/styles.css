@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F8E9;  /* Light greenish background */
+    color: #3C3C3C; /* Dark text for good contrast */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;  /* Green background to represent agriculture */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    width: 150px; /* Logo size */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFF;  /* White text */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFEB3B;  /* Yellow hover effect for farm theme */
+}
+
+/* Main Content Area */
+main {
+    padding: 40px 20px;
+    background-color: #FFF;  /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3C763D; /* Dark green footer */
+    color: #FFF;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
